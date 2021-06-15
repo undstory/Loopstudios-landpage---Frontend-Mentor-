@@ -1,18 +1,16 @@
 import React from 'react'
 import GlobalStyle from 'themes/GlobalStyle'
-import styled, { ThemeProvider } from 'styled-components'
-import { themes } from 'themes/Themes'
+import { theme } from 'themes/theme'
+import { ThemeProvider } from 'styled-components'
 
-const HeaderWrapper = styled.h2`
-  font-family: ${({ theme}) => theme.textFont}
-`;
+import Welcome from 'layouts/Welcome'
 
 const App = () => (
   <>
   <GlobalStyle />
-  <ThemeProvider theme={themes}>
+  <ThemeProvider theme={theme}>
     <>
-    <HeaderWrapper>Happy hacking!</HeaderWrapper>
+      <Welcome />
     </>
   </ThemeProvider>
 

@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
     *, *::after, *::before {
         box-sizing: border-box;
@@ -15,8 +15,12 @@ const GlobalStyle = createGlobalStyle`
 
     body {
         font-size: 1.5rem;
-        max-width: 1440px;
+        max-width: 1920px;
         margin: 0 auto;
+    }
+
+    ul {
+        list-style-type: none;
     }
 `;
 
