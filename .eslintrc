@@ -1,0 +1,14 @@
+{ 
+    "extends": ["airbnb", "prettier"],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "moduleDirectory": [ "node_modules", "src/"]
+        }
+      }
+    },
+    "rules": {
+      "import/prefer-default-export": 0,
+        "react/jsx-filename-extension": [0, { "extensions": [".js"] }]
+      }
+}

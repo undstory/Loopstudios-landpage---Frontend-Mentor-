@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import GlobalStyle from 'themes/GlobalStyle'
+import styled, { ThemeProvider } from 'styled-components'
+import { themes } from 'themes/Themes'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const HeaderWrapper = styled.h2`
+  font-family: ${({ theme}) => theme.textFont}
+`;
 
-export default App;
+const App = () => (
+  <>
+  <GlobalStyle />
+  <ThemeProvider theme={themes}>
+    <>
+    <HeaderWrapper>Happy hacking!</HeaderWrapper>
+    </>
+  </ThemeProvider>
+
+  </>
+)
+
+export default App
