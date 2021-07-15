@@ -65,8 +65,7 @@ const StyledBox = styled.div`
 `;
 
 const TitleMini = styled(Title)`
-    font-size: 5rem;
-    color: ${({ theme }) => theme.black};
+   
     margin-bottom: 3rem;
 
     @media (max-width: 997px) {
@@ -98,7 +97,7 @@ const Intro = () => (
         <ContentWrapper>
             <Img src={img} alt="man with interactive vr" />
             <StyledBox>
-                <TitleMini>The leader in interactive vr</TitleMini>
+                <TitleMini mini>The leader in interactive vr</TitleMini>
                 <StyledParagraph>Founded in 2011, Loopstudios has beem producing world-class virtual 
                     reality projects for some of the best companies around the globe. 
                     Our award-winning creations have transformed businesses through digital 
