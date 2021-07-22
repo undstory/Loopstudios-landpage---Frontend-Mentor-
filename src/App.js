@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import Welcome from 'layouts/Welcome'
 import Intro from 'layouts/Intro'
 import Creations from 'layouts/Creations'
+import Footer from 'layouts/Footer'
 
 const App = () => (
   <>
@@ -14,6 +15,7 @@ const App = () => (
       <Welcome />
       <Intro />
       <Creations />
+      <Footer />
     </>
   </ThemeProvider>
 

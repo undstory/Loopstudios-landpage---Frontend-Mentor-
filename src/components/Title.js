@@ -18,6 +18,9 @@ const Title = styled.h2`
     ${({ miniMini }) => miniMini && css`
     font-size: 3rem;
     color: ${({ theme }) => theme.white};
+
+  
+    
     `}
 
     @media (max-width: 1000px) {
