@@ -16,4 +16,5 @@ In this case, I wanted to practice the basics of React and styled-components
 
 ## Links
 
-Live: 
+Live: loopstudios-landpage-frontend-mentor.vercel.app
+
